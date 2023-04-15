@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginActivity"
+    android:orientation="horizontal">
+
+<!--    위쪽 화면 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/mainColor"
+        android:layout_height="150dp">
+
+        <TextView
+            android:text="로그인"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp">
+
+        <EditText
+            android:hint="아이디"
+            android:layout_width="357dp"
+            android:layout_height="43dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8.5dp"
+            android:background="#999999">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
