@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740376760766",
+    "project_id": "hansorifront",
+    "storage_bucket": "hansorifront.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740376760766:android:09429d66aa0377ff6069ef",
+        "android_client_info": {
+          "package_name": "com.example.hansorifront"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740376760766-uv7brnqp81hkglq8j14ks55ku6pobjhf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5RVPnMZd7CYAwKPVGQ_7Jk1Bpp9ZkSak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740376760766-uv7brnqp81hkglq8j14ks55ku6pobjhf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
