@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".auth.LoginActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
 <!--    위쪽 화면 -->
     <LinearLayout
@@ -27,24 +27,48 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp">
+        android:layout_margin="50dp"
+        android:orientation="vertical">
 
+<!--        아이디-->
         <EditText
             android:hint="아이디"
-            android:layout_width="357dp"
-            android:layout_height="43dp"
-            android:layout_margin="10dp"
-            android:background="@android:color/transparent"/>
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/AuthEditText"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="8.5dp"
-            android:background="#999999">
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#999999"/>
 
-        </LinearLayout>
+
+<!--        비밀번호-->
+        <EditText
+            android:hint="비밀번호"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            style="@style/AuthEditText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#999999"/>
+
+        <Button
+            android:text="로그인하기"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/background_radius_yellow"/>
+
 
     </LinearLayout>
-
 
 
 </LinearLayout>
