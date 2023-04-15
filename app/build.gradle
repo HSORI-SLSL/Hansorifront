@@ -36,7 +36,6 @@ android {
     }
 }
 
-apply plugin: 'com.google.gms.google-services'
 
 dependencies {
 
@@ -54,5 +53,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
 
     implementation 'com.google.firebase:firebase-auth-ktx'
-    implementation 'com.google.firebase:firebase-databases-ktx'
+    //implementation 'com.google.firebase:firebase-databases-ktx'
 }
