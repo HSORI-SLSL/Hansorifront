@@ -1,88 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".auth.JoinActivity"
-    android:orientation="vertical">
-
+<layout>
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:background="@color/mainColor"
-        android:layout_height="150dp">
-
-        <TextView
-            android:text="회원가입"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"/>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="50dp"
+        android:layout_height="match_parent"
+        tools:context=".auth.JoinActivity"
         android:orientation="vertical">
 
-        <!--        아이디-->
-        <EditText
-            android:hint="아이디"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            style="@style/AuthEditText"/>
+            android:background="@color/mainColor"
+            android:layout_height="150dp">
+
+            <TextView
+                android:text="회원가입"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="#999999"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:orientation="vertical">
+
+            <!--        아이디-->
+            <EditText
+                android:id="@+id/emailArea"
+                android:hint="아이디"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/AuthEditText"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999"/>
 
 
-        <!--        비밀번호-->
-        <EditText
-            android:hint="비밀번호"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            style="@style/AuthEditText"/>
+            <!--        비밀번호-->
+            <EditText
+                android:id="@+id/passwordArea1"
+                android:hint="비밀번호"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                style="@style/AuthEditText"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="#999999"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999"/>
 
-<!--        비밀번호 확인-->
-        <EditText
-            android:hint="비밀번호 재입력"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="textPassword"
-            style="@style/AuthEditText"/>
+    <!--        비밀번호 확인-->
+            <EditText
+                android:id="@+id/passwordArea2"
+                android:hint="비밀번호 재입력"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                style="@style/AuthEditText"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:background="#999999"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#999999"/>
 
-        <Button
-            android:text="가입하기"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/background_radius_yellow"/>
+            <Button
+                android:id="@+id/joinBtn"
+                android:text="가입하기"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/background_radius_yellow"/>
 
+
+        </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
+</layout>
