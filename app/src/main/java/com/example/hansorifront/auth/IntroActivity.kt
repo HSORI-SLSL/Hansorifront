@@ -17,15 +17,17 @@ class IntroActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_intro)
 
         //로그인 버튼을 클릭할 경우
-        binding.loginBtn.setOnClickListener {
+        binding.loginBtn.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        
-        // 회원가입 버튼을 클릭할 경우
+
+// 회원가입 버튼을 클릭할 경우
         binding.joinBtn.setOnClickListener{
             val intent = Intent(this, JoinActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }
